@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS BEACH</title>
+  <link rel="stylesheet" href="styletds.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1><a href="#">CS BEACH</a></h1>
+    </div>
+    <nav class="navegacao">
+      <ul class="nav">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="product">
+    <img id="product-image" src="imagens/biquine (1).png" alt="Imagem do Produto" width="35%">
+   
+    <div class="product-info">
+      <h3>Nome do Produto</h3>
+      <p>Valor: $80,00</p>
+      <select id="tamanho">
+        <option value="P">P</option>
+        <option value="G">G</option>
+        <option value="M">M</option>
+        <option value="GG">GG</option>
+        <option value="PP">PP</option>
+        <option value="MM">MM</option>
+      </select>
+      
+      <div>
+        <input type="number" id="quantidade" min="1" value="1">
+        <button onclick="adicionarAoCarrinho()" class="btn-adicionar">Adicionar ao Carrinho</button>
+     
+        <ul id="color-options">
+          <li class="color-button" data-color="red" data-image="C:\Users\alefs\OneDrive\Área de Trabalho\Nova pasta\imagens\maio.jpg"></li>
+          <li class="color-button" data-color="blue" data-image="C:\Users\alefs\OneDrive\Área de Trabalho\Nova pasta\imagens\biquine (3).png"></li>
+          <li class="color-button" data-color="green" data-image="C:\Users\alefs\OneDrive\Área de Trabalho\Nova pasta\imagens\biquine (2).png"></li>
+        </ul>
+        
+       </div>
+    </div>
+  </section>
+
+  <section id="carrinho">
+    <h2>Carrinho de Compras</h2>
+    <ul id="itens-carrinho"></ul>
+    <p id="valor-a-ser-pago"></p>
+    <button id="finalizar-btn" onclick="finalizarCompra()" class="btn-finalizar">Finalizar Compra</button>
+  </section>
+
+  <script src="jstds.js"></script>
+</body>

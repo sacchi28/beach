@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+  
+
+body{
+ font-family: "Open Sans", sans-serif;
+ margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+  a :hover{
+    color: rgb(179, 179, 179);
+  }
+  .faixa{
+    border-bottom: 1px solid #ccc;
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: space-between;    
+    font-size: 1.2em;
+  }
+  .logo h1{
+font-size: 2.0em;
+margin: 0.6em 0;
+display: inline-block;
+  }
+
+  @media(max-width: 509px){
+    .logo h1{
+    font-size: 1.0em;
+    }
+    .faixa{
+    font-size:0.5em;
+    }
+  }
+
+  @media(max-width: 300px){
+    .logo h1{
+    font-size: 1.0em;
+    }
+    .faixa{
+    font-size:0.3em;
+    }
+  }
+.navegacao ul,
+.navegacao li{
+margin: 0;
+padding: 0;
+}
+.navegacao li{
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+}
+  
+.container{
+  display: flex;
+  justify-content: space-between;
+  border:20px;
+  padding:2px;
+margin-top: 10%;  
+  flex-wrap: wrap;
+}
+.container img:hover{
+  box-shadow: 0 0 8px rgba(195, 0, 255, 0.4);
+}
+.container img{
+  transition: all .4s;
+  width: 95%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-container button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #8a2be2;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 7%;
+}
+
+.container .item {
+  position: relative;
+}
+
+.curtida {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.curtida i {
+  color: #ff1493;
+  margin-right: 5px;
+}
+
+.curtida span {
+  font-weight: bold;
+}
+

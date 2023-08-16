@@ -1,0 +1,180 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #6A0DAD;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.logo h1 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav li a:hover {
+  color: #f9f9f9;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+.product img {
+  width: 35%;
+  margin-right: 20px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product h3 {
+  margin: 0;
+  color: #6A0DAD;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#tamanho {
+  margin-top: 5px;
+  padding: 5px;
+  width: 60px;
+  margin-right: 10px;
+}
+
+#quantidade {
+  padding: 5px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #6A0DAD;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#carrinho {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#carrinho h2 {
+  color: #6A0DAD;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#itens-carrinho {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#itens-carrinho li {
+  color: #333;
+  margin: 5px 0;
+}
+
+button#finalizar-btn {
+  background-color: #6A0DAD;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#color-options {
+  display: flex;
+}
+
+.color-button {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 10px; /* Adicione um espaço entre os botões */
+}
+
+.color-button[data-color="red"] {
+  background-color: red;
+}
+
+.color-button[data-color="blue"] {
+  background-color: blue;
+}
+
+.color-button[data-color="green"] {
+  background-color: rgb(21, 255, 0);
+}
+
+
+/* Estilos padrão */
+
+/* Adicione as regras de mídia query para tamanhos de tela menores */
+
+@media (max-width: 768px) {
+  .product {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .product-info {
+    align-items: center;
+  }
+  
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav li {
+    margin: 10px 0;
+  }
+}
+
+/* Adicione outros estilos e imagens de acordo com as cores */

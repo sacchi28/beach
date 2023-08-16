@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  animation: background-animation 2s linear infinite;
+}
+
+@keyframes background-animation {
+  0% {
+    background-color: #cdb4db;
+  }
+  25% {
+    background-color: #ffc8dd;
+  }
+  50% {
+    background-color:#ffafcc;
+  }
+  75% {
+    background-color:#bde0fe;
+  }
+  100% {
+    background-color:#cdb4db ;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wave-icon {
+  display: flex;
+  position: relative;
+  top: 40%; /* Ajuste a posição vertical do ícone conforme necessário */
+  left: 40%; /* Ajuste a posição horizontal do ícone conforme necessário */
+  transform: translateX(-50%);
+  width: 10%; /* Ajuste a largura do ícone conforme necessário */
+  height: auto; /* Ajuste a altura do ícone conforme necessário */
+  animation: wave-animation 2s infinite alternate;
+}
+@keyframes wave-animation {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+.loading-screen {
+  text-align: center;
+  font-size: 30px;
+  font-family: Courier, monospace;
+}
+
+h1, p {
+  color: rgb(0, 0, 0);
+}

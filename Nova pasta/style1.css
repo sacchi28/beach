@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    color: #ff8080;
+    font-size: 32px;
+    margin: 0;
+}
+
+.promotion-image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.promotion-text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.promotion-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.accessory-image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.how-to-participate {
+    margin-bottom: 40px;
+}
+
+.how-to-participate h2 {
+    color: #ff8080;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.how-to-participate ol {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+.offer {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.offer h2 {
+    color: #ff8080;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.offer p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8080;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ff4d4d;
+}
+
+.footer {
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    margin-top: 40px;
+}
